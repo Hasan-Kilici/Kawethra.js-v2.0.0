@@ -2,46 +2,56 @@ let clientLang = window.navigator.language;
 
 function chanceTheme(){
  let theme = document.body.getAttribute('theme');
-   if (theme == "dark") {
+ switch(theme) {
+  case "black":
    document.body.style.backgroundColor = data.themeColors.dark.bg;
    document.body.style.color = data.themeColors.dark.fg;
-   }
-   if (theme == "light") {
+   break;
+  case "light":
    document.body.style.backgroundColor = data.themeColors.light.bg;
    document.body.style.color = data.themeColors.light.fg;
-   }
-   if (theme == "red") {
+   break;
+  case "red":
    document.body.style.backgroundColor = data.themeColors.red.bg;
    document.body.style.color = data.themeColors.red.fg;
-   }
-   if (theme == "orange") {
+   break;
+  case "orange":
    document.body.style.backgroundColor = data.themeColors.orange.bg;
    document.body.style.color = data.themeColors.orange.fg;
-   } if (theme == "yellow"){
+   break;
+  case "yellow":
    document.body.style.backgroundColor = data.themeColors.yellow.bg;
-   document.body.style.color = data.themeColors.yellow.fg;   
-   } if (theme == "lime"){
+   document.body.style.color = data.themeColors.yellow.fg;
+   break;
+  case "lime":
    document.body.style.backgroundColor = data.themeColors.lime.bg;
    document.body.style.color = data.themeColors.lime.fg;  
-   } if (theme == "green"){
+   break;
+  case "green":
    document.body.style.backgroundColor = data.themeColors.green.bg;
    document.body.style.color = data.themeColors.green.fg;
-   } if (theme == "blue"){
+   break;
+  case "blue":
    document.body.style.backgroundColor = data.themeColors.blue.bg;
    document.body.style.color = data.themeColors.blue.fg;
-   } if (theme == "blurple"){
+   break;
+  case "blurple":
    document.body.style.backgroundColor = data.themeColors.blurple.bg;
-   document.body.style.color = data.themeColors.blurple.fg; 
-   } if(theme == "purple"){
+   document.body.style.color = data.themeColors.blurple.fg;
+   break;
+  case "purple":
    document.body.style.backgroundColor = data.themeColors.purple.bg;
    document.body.style.color = data.themeColors.purple.fg;
-   } if(theme == "magenta"){
+   break;
+  case "magenta":
    document.body.style.backgroundColor = data.themeColors.magenta.bg;
    document.body.style.color = data.themeColors.magenta.fg;
-   } if(theme == "pink"){
+   break;
+  case "pink":
    document.body.style.backgroundColor = data.themeColors.pink.bg;
    document.body.style.color = data.themeColors.pink.fg;
-   }
+   break;
+ }
 }
 
 function setLang() {
